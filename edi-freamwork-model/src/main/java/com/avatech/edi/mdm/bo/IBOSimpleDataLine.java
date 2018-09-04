@@ -1,4 +1,4 @@
-package com.avatech.edi.bo;
+package com.avatech.edi.mdm.bo;
 
 public interface IBOSimpleDataLine {
 }

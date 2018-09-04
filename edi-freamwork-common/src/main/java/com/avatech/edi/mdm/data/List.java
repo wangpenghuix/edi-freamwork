@@ -1,4 +1,4 @@
-package com.avatech.edi.data;
+package com.avatech.edi.mdm.data;
 
 import java.util.function.Predicate;
 

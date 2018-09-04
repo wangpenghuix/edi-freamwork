@@ -1,9 +1,17 @@
-package com.avatech.edi.dto;
+package com.avatech.edi.mdm.dto;
+
+import jdk.internal.util.xml.impl.ReaderUTF8;
 
 public class Result<T> {
     private static final String OK = "0";
     private static final String MESSAGE = "操作成功";
 
+    public static Result ok(){
+        Result rt = new Result();
+        rt.code = OK;
+        rt.message = MESSAGE;
+        return rt;
+    }
     public Result ok(T data){
         this.code = OK;
         this.message = MESSAGE;

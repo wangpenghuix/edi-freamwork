@@ -1,6 +1,6 @@
-package com.avatech.edi.repository;
+package com.avatech.edi.mdm.repository;
 
-import com.avatech.edi.bo.IBusinessObject;
+import com.avatech.edi.mdm.bo.IBusinessObject;
 
 public abstract class BOOperationRepositoryWithTranscation<M extends IBusinessObject> implements BaseBOOperationRepository<M>{
 
