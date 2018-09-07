@@ -2,7 +2,7 @@ package com.avatech.edi.mdm.dto;
 
 import jdk.internal.util.xml.impl.ReaderUTF8;
 
-public class Result<T> {
+public class Result {
     private static final String OK = "0";
     private static final String MESSAGE = "操作成功";
 
@@ -12,23 +12,26 @@ public class Result<T> {
         rt.message = MESSAGE;
         return rt;
     }
-    public Result ok(T data){
-        this.code = OK;
-        this.message = MESSAGE;
-        this.data = data;
-        return this;
+    public static Result ok(Object data){
+        Result rt = new Result();
+        rt.code = OK;
+        rt.message = MESSAGE;
+        rt.data = data;
+        return rt;
     }
 
-    public Result error(String code,String message){
-        this.code = code;
-        this.message = message;
-        return this;
+    public static Result error(String code,String message){
+        Result rt = new Result();
+        rt.code = code;
+        rt.message = message;
+        return rt;
     }
 
-    public Result error(String code,Exception e){
-        this.code = code;
-        this.message = e.getMessage();
-        return this;
+    public static Result error(String code,Exception e){
+        Result rt = new Result();
+        rt.code = code;
+        rt.message = e.getMessage();
+        return rt;
     }
 
     private String code;
@@ -51,13 +54,13 @@ public class Result<T> {
         this.message = message;
     }
 
-    private T data;
+    private Object data;
 
-    public T getData(){
+    public Object getData(){
         return data;
     }
 
-    public void setData(T data) {
+    public void setData(Object data) {
         this.data = data;
     }
 }
