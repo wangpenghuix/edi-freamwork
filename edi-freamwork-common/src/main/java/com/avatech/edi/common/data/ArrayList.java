@@ -1,4 +1,4 @@
-package com.avatech.edi.mdm.data;
+package com.avatech.edi.common.data;
 
 import java.util.Collection;
 import java.util.Objects;

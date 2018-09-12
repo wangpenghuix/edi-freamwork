@@ -1,4 +1,4 @@
-package com.avatech.edi.mdm.bo;
+package com.avatech.edi.model.bo;
 
 public interface IBODocumentLine extends IBusinessObject {
 

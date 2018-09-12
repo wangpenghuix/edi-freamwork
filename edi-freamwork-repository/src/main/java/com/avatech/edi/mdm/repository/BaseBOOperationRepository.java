@@ -1,6 +1,6 @@
 package com.avatech.edi.mdm.repository;
 
-import com.avatech.edi.mdm.bo.IBusinessObject;
+import com.avatech.edi.model.bo.IBusinessObject;
 
 public interface BaseBOOperationRepository<M extends IBusinessObject> {
 
