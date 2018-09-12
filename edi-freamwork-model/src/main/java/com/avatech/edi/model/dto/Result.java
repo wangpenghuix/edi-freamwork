@@ -1,6 +1,4 @@
-package com.avatech.edi.mdm.dto;
-
-import jdk.internal.util.xml.impl.ReaderUTF8;
+package com.avatech.edi.model.dto;
 
 public class Result {
     private static final String OK = "0";

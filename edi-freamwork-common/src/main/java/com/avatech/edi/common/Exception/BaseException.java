@@ -1,4 +1,4 @@
-package com.avatech.edi.mdm.Exception;
+package com.avatech.edi.common.Exception;
 
 /**
  * 异常基类

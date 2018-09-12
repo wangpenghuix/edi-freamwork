@@ -1,4 +1,4 @@
-package com.avatech.edi.mdm.bo;
+package com.avatech.edi.model.bo;
 
 public abstract class BusinessObject<T extends IBusinessObject> implements IBusinessObject {
 
