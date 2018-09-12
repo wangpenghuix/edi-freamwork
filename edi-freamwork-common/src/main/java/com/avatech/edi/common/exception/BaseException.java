@@ -1,4 +1,4 @@
-package com.avatech.edi.common.Exception;
+package com.avatech.edi.common.exception;
 
 /**
  * 异常基类
