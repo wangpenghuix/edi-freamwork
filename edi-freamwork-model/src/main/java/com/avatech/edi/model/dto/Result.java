@@ -61,4 +61,13 @@ public class Result {
     public void setData(Object data) {
         this.data = data;
     }
+
+    @Override
+    public String toString() {
+        return "Result{" +
+                "code:'" + code + '\'' +
+                ", message:'" + message + '\'' +
+                ", data:" + data +
+                '}';
+    }
 }
