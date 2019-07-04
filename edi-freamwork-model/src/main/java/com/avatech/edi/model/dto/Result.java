@@ -1,64 +1,61 @@
 package com.avatech.edi.model.dto;
 
-public class Result {
-    private static final String OK = "0";
-    private static final String MESSAGE = "操作成功";
+public class Result<T> {
+    public static String OK = "0";
 
-    public static Result ok(){
-        Result rt = new Result();
-        rt.code = OK;
-        rt.message = MESSAGE;
-        return rt;
-    }
-    public static Result ok(Object data){
-        Result rt = new Result();
-        rt.code = OK;
-        rt.message = MESSAGE;
-        rt.data = data;
-        return rt;
+    public static String SUCCESSFUL = "OK";
+
+    public Result(){
+
     }
 
-    public static Result error(String code,String message){
-        Result rt = new Result();
-        rt.code = code;
-        rt.message = message;
-        return rt;
+    public Result(String code,String message){
+        this.code = code;
+        this.message = message;
     }
 
-    public static Result error(String code,Exception e){
-        Result rt = new Result();
-        rt.code = code;
-        rt.message = e.getMessage();
-        return rt;
+    public Result ok(T data){
+        this.code = Result.OK;
+        this.message = Result.SUCCESSFUL;
+        this.data = data;
+        return this;
+    }
+
+    public Result ok(){
+        return new Result(Result.OK,Result.SUCCESSFUL);
+    }
+
+    public Result error(String code,String message){
+        return new Result(code,message);
     }
 
     private String code;
 
-    public String getCode(){
+    private String message;
+
+    private T data;
+
+    public String getCode() {
         return code;
     }
 
-    public void setCode(String code){
+    public void setCode(String code) {
         this.code = code;
     }
 
-    private String message;
-
-    public String getMessage(){
+    public String getMessage() {
         return message;
     }
 
-    public void setMessage(String message){
+    public void setMessage(String message) {
         this.message = message;
     }
 
-    private Object data;
-
-    public Object getData(){
+    public T getData() {
         return data;
     }
 
-    public void setData(Object data) {
+    public void setData(T data) {
         this.data = data;
     }
 }
