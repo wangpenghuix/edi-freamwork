@@ -1,6 +1,7 @@
 package com.avatech.edi.model.dto;
 
 public class Result<T> {
+
     public static String OK = "0";
 
     public static String SUCCESSFUL = "OK";
