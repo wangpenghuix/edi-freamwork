@@ -17,4 +17,11 @@
             <url>http://47.92.196.35:8081/repository/edi/</url>
         </repository>
     </distributionManagement>
+    <dependencies>
+        <dependency>
+            <groupId>commons-codec</groupId>
+            <artifactId>commons-codec</artifactId>
+            <version>1.10</version>
+        </dependency>
+    </dependencies>
 </project>
