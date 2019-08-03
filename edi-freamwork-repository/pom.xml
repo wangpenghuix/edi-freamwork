@@ -5,7 +5,7 @@
     <parent>
         <artifactId>edi-freamwork</artifactId>
         <groupId>com.avatech.edi</groupId>
-        <version>0.0.1</version>
+        <version>1.01.100_alpha</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
@@ -15,12 +15,19 @@
         <dependency>
             <groupId>com.avatech.edi</groupId>
             <artifactId>edi-freamwork-model</artifactId>
-            <version>0.0.1</version>
+            <version>1.01.100_alpha</version>
         </dependency>
         <dependency>
             <groupId>com.avatech.edi</groupId>
             <artifactId>edi-freamwork-common</artifactId>
-            <version>0.0.1</version>
+            <version>1.01.100_alpha</version>
         </dependency>
     </dependencies>
+
+    <distributionManagement>
+        <repository>
+            <id>edi.base</id>
+            <url>http://47.92.196.35:8081/repository/edi/</url>
+        </repository>
+    </distributionManagement>
 </project>

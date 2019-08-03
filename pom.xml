@@ -5,7 +5,7 @@
 
     <groupId>com.avatech.edi</groupId>
     <artifactId>edi-freamwork</artifactId>
-    <version>0.0.1</version>
+    <version>1.01.100_alpha</version>
     <modules>
         <module>edi-freamwork-model</module>
         <module>edi-freamwork-repository</module>
@@ -46,8 +46,4 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-
-
-
-
 </project>

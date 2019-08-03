@@ -5,17 +5,7 @@ package com.avatech.edi.common.exception;
  */
 public class BaseException extends RuntimeException{
 
-    private String code = "";
-
-    public String getCode(){
-        return code;
-    }
-
-    private String message = "";
-    public String getMessage(){return message;}
-
-    public BaseException() {
-    }
+    private static final long serialVersionUID = 2785154526995190568L;
 
     public BaseException(String message) {
         super(message);
@@ -41,4 +31,19 @@ public class BaseException extends RuntimeException{
         this.code = code;
         this.message = message;
     }
+
+    private String code = "";
+
+    public String getCode(){
+        return code;
+    }
+
+    private String message = "";
+    public String getMessage(){return message;}
+
+    public BaseException() {
+        super();
+    }
+
+
 }
