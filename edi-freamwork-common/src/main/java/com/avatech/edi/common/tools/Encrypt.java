@@ -1,6 +1,5 @@
 package com.avatech.edi.common.tools;
 
-
 import com.avatech.edi.common.exception.BusinessException;
 import org.apache.commons.codec.DecoderException;
 import org.apache.commons.codec.binary.Hex;
@@ -20,7 +19,7 @@ import java.util.Arrays;
  * @date 2019/8/3
  */
 public class Encrypt {
-    private String strDefaultKey = "ysyj-20190710123";
+    private String strDefaultKey = "Byte190-890Dance";
     private byte[] key = strDefaultKey.getBytes();
 
     private static final String AES = "AES";

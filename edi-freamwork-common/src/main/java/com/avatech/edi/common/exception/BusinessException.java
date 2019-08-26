@@ -4,7 +4,7 @@ package com.avatech.edi.common.exception;
  * @author Fancy
  * @date 2019/7/6
  */
-public class BusinessException extends BaseException {
+public class BusinessException extends BaseException{
 
     private static final long serialVersionUID = -3873063305424165075L;
 
